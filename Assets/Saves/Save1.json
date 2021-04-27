@@ -1,0 +1,38 @@
+{
+  "id": 1,
+  "type": "SAMPLE",
+  "map": {
+    "buildings": [ 
+     {"id": 0, "type" : "FACTORY", "position": [4,12], "size": [5,1]},
+     {"id": 1, "type" : "HOME", "position": [5,4], "size": [3,1]},
+     {"id": 2, "type" : "HOME", "position": [5,5], "size": [1,1]},
+     {"id": 3, "type" : "HOME", "position": [5,6], "size": [3,1]},
+     {"id": 4, "type" : "HOME", "position": [7,5], "size": [1,1]}
+    ],
+    "signs": [
+     {"type": "SPEED_LIMIT",  "value": 60, "position": [6, 3]},
+     {"type": "STOP",  "value": -1, "position": [8, 11]}
+],
+    "trafficLights" : [1],
+    "road": {
+      "vertexes": [
+        {"id": 0, "position": [4,3]},
+        {"id": 1, "position": [8,3]},
+        {"id": 2, "position": [8,7]},
+        {"id": 3, "position": [4,7]},
+        {"id": 4, "position": [4,11]},
+        {"id": 5, "position": [8,11]}
+                  ],
+      "edges": [
+        {"from": 0, "to": 1},
+        {"from": 1, "to": 2},
+        {"from": 2, "to": 3},
+        {"from": 3, "to": 0},
+        {"from": 3, "to": 4},
+        {"from": 4, "to": 5},
+        {"from": 5, "to": 4},
+		{"from": 4, "to": 3}
+      ]
+    }
+  }
+}
